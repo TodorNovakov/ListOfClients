@@ -1,0 +1,15 @@
+c:\users\toshkata\documents\visual studio 2013\Projects\ClientsList\ClientsList\bin\Debug\ClientsList.exe.config
+c:\users\toshkata\documents\visual studio 2013\Projects\ClientsList\ClientsList\bin\Debug\ClientsList.exe
+c:\users\toshkata\documents\visual studio 2013\Projects\ClientsList\ClientsList\bin\Debug\ClientsList.pdb
+c:\users\toshkata\documents\visual studio 2013\Projects\ClientsList\ClientsList\obj\Debug\MainWindow.baml
+c:\users\toshkata\documents\visual studio 2013\Projects\ClientsList\ClientsList\obj\Debug\MainWindow.g.cs
+c:\users\toshkata\documents\visual studio 2013\Projects\ClientsList\ClientsList\obj\Debug\App.g.cs
+c:\users\toshkata\documents\visual studio 2013\Projects\ClientsList\ClientsList\obj\Debug\ClientsList_MarkupCompile.cache
+c:\users\toshkata\documents\visual studio 2013\Projects\ClientsList\ClientsList\obj\Debug\ClientsList.g.resources
+c:\users\toshkata\documents\visual studio 2013\Projects\ClientsList\ClientsList\obj\Debug\ClientsList.Properties.Resources.resources
+c:\users\toshkata\documents\visual studio 2013\Projects\ClientsList\ClientsList\obj\Debug\ClientsList.csproj.GenerateResource.Cache
+c:\users\toshkata\documents\visual studio 2013\Projects\ClientsList\ClientsList\obj\Debug\ClientsList.exe
+c:\users\toshkata\documents\visual studio 2013\Projects\ClientsList\ClientsList\obj\Debug\ClientsList.pdb
+c:\users\toshkata\documents\visual studio 2013\Projects\ClientsList\ClientsList\obj\Debug\GeneratedInternalTypeHelper.g.cs
+c:\users\toshkata\documents\visual studio 2013\Projects\ClientsList\ClientsList\obj\Debug\ClientsList_MarkupCompile.lref
+C:\Users\Toshkata\documents\visual studio 2013\Projects\ClientsList\ClientsList\obj\Debug\ClientsList.csprojResolveAssemblyReference.cache

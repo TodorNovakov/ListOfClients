@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<clients>
+  
+  <client>
+    <name>Petyr Ivanov</name>
+    <city>Sofiya</city>
+    <note>belejkata2</note>
+    <imagePath>..\..\Images\person1.jpg</imagePath>
+    <contractPath>..\..\Contracts\Contract1.txt</contractPath>
+    <contractDate>2.1.2012</contractDate>
+  </client>
+  <client>
+    <name>Ivan Kovachev</name>
+    <city>Plovdiv</city>
+    <note>belejkata1</note>
+    <imagePath>..\..\Images\person2.png</imagePath>
+    <contractPath>..\..\Contracts\Contract2.txt</contractPath>
+    <contractDate>1.3.2010</contractDate>
+  </client>
+  <client>
+    <name>Petko Kermensi</name>
+    <city>Rouse</city>
+    <note>belejkata3</note>
+    <imagePath>..\..\Images\person3.png</imagePath>
+    <contractPath>..\..\Contracts\Contract3.txt</contractPath>
+    <contractDate>24.3.2011</contractDate>
+  </client>
+  
+</clients>
