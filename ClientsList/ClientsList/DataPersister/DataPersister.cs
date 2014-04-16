@@ -20,9 +20,9 @@ namespace ClientsList
             return new ObservableCollection<ClientViewModel>(phones);
         }
 
-        internal static void AddClient(string documenPath, ClientViewModel client)
+        internal static void AddClient(string documentPath, ClientViewModel client)
         {
-            var root = XDocument.Load(documenPath).Root;
+            var root = XDocument.Load(documentPath).Root;
             root.Add(new XElement("client",
                 new XElement("name", client.Name),
                 new XElement("city", client.City),
@@ -30,7 +30,14 @@ namespace ClientsList
                 new XElement("imagePath", client.ImagePath),
                 new XElement("contractPath",client.ContractPath),
                 new XElement("contractDate",client.ContractDate)));
-            root.Document.Save(documenPath);
+            root.Document.Save(documentPath);
         }
+
+        internal static void DeleteClient(string documenthPath, ClientViewModel client)
+        {
+            var doc = XDocument.Load(documenthPath);
+            doc.Descendants().Where(c => c.Name == client.Name).Remove();
+        }
+
     }
 }

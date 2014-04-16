@@ -37,8 +37,9 @@
 
         </DataGrid>
 
-        <StackPanel  Grid.RowSpan="2" Grid.Column="2" Background="GreenYellow"
-                     DataContext="{Binding ElementName=TableOfClients,Path=SelectedItem}" >
+        <StackPanel   Grid.RowSpan="2" Grid.Column="2" Background="GreenYellow"
+                     DataContext="{Binding ElementName=TableOfClients,Path=SelectedItem}">
+            
             <TextBlock Text="{Binding Name}" FontSize="22" FontStyle="Italic" FontWeight="Medium"/>
             <TextBlock Text="{Binding City}" FontSize="22"  FontStyle="Italic" FontWeight="Medium"/>
             <TextBlock Text="{Binding Note}" FontSize="15"/>
@@ -57,7 +58,9 @@
         <DockPanel Name="PanelButtons"  Grid.Row="2" >
             <Button MinHeight="25" DockPanel.Dock="Top" Command="{Binding AddNew}">Add</Button>
             <Button MinHeight="25" DockPanel.Dock="Top">Update</Button>
-            <Button MinHeight="25" DockPanel.Dock="Bottom">Delete</Button>
+            <Button MinHeight="25" DockPanel.Dock="Bottom"
+                    Command="{Binding DeleteCommand }"
+                    CommandParameter="{Binding ElementName=TableOfClients,Path=SelectedItem}">Delete</Button>
         </DockPanel>
 
     </Grid>

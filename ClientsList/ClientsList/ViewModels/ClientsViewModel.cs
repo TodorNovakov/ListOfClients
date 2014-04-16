@@ -6,6 +6,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Data;
 using System.Windows.Input;
 
 namespace ClientsList
@@ -14,7 +15,9 @@ namespace ClientsList
     {
         private ObservableCollection<ClientViewModel> clients;
         private ICommand addNewCommand;
+        private ICommand deleteCommand;
         private ClientViewModel newClientViewModel;
+        private ClientViewModel deleteClientViewModel;
         public string PathXML { get; set; }
 
         public IEnumerable<ClientViewModel> Clients
@@ -43,7 +46,7 @@ namespace ClientsList
         public ClientsViewModel()
         {
             this.PathXML = "..\\..\\clients.xml";
-            this.Clients = DataPersister.GetClientsFromXml(this.PathXML);     
+            this.Clients = DataPersister.GetClientsFromXml(this.PathXML);
         }
 
         public ClientViewModel NewClient
@@ -59,6 +62,19 @@ namespace ClientsList
             }
         }
 
+        public ClientViewModel DeleteClient
+        {
+            get
+            {
+                return this.deleteClientViewModel;
+            }
+            set
+            {
+                this.deleteClientViewModel = value;
+                this.OnPropertyChanged("DeleteClient");
+            }
+        }
+
         public ICommand AddNew
         {
             get
@@ -69,6 +85,26 @@ namespace ClientsList
                 }
                 return this.addNewCommand;
             }
+        }
+
+        public ICommand DeleteCommand
+        {
+            get
+            {
+                if (this.deleteCommand == null)
+                {
+                    this.deleteCommand = new RelayCommand(this.HandledeleteCommand);
+                }
+                return this.deleteCommand;
+            }
+ 
+        }
+
+        private void HandledeleteCommand(object obj)
+        {
+            DataPersister.DeleteClient(this.PathXML, this.DeleteClient);
+            this.Clients = DataPersister.GetClientsFromXml(this.PathXML);
+            this.DeleteClient = new ClientViewModel();
         }
 
         private void HandleAddNewCommand(object obj)
